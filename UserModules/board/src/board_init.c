@@ -33,6 +33,17 @@ static ExampleGpioPort alarm_port = { "ALARM_PORT", 0U, 0 };
 static ExampleGpioPort status_port = { "STATUS_PORT", 0U, 0 };
 static ExampleGpioPort network_port = { "NETWORK_PORT", 0U, 0 };
 
+static void example_gpio_write( void *ctx, uint32_t pin, int level );
+
+static const LedGpioConfig alarm_led_config =
+    LED_GPIO_CONFIG( "alarm", example_gpio_write, &alarm_port, 0U, LED_GPIO_ACTIVE_HIGH );
+
+static const LedGpioConfig status_led_config =
+    LED_GPIO_CONFIG( "status", example_gpio_write, &status_port, 1U, LED_GPIO_ACTIVE_HIGH );
+
+static const LedGpioConfig network_led_config =
+    LED_GPIO_CONFIG( "network", example_gpio_write, &network_port, 2U, LED_GPIO_ACTIVE_LOW );
+
 /*
  * Example GPIO write callback.
  *
@@ -55,9 +66,9 @@ static void example_gpio_write( void *ctx, uint32_t pin, int level )
 void board_init( void )
 {
     /* Bind logical LED names to concrete GPIO resources. */
-    led_gpio_init( &alarm_obj, "alarm", example_gpio_write, &alarm_port, 0U, 1U );
-    led_gpio_init( &status_obj, "status", example_gpio_write, &status_port, 1U, 1U );
-    led_gpio_init( &network_obj, "network", example_gpio_write, &network_port, 2U, 0U );
+    led_gpio_init( &alarm_obj, &alarm_led_config );
+    led_gpio_init( &status_obj, &status_led_config );
+    led_gpio_init( &network_obj, &network_led_config );
 
     /* Export concrete objects as LedBase handles. */
     g_led_alarm = led_gpio_as_base( &alarm_obj );

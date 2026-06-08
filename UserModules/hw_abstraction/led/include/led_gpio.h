@@ -19,11 +19,19 @@ extern "C" {
  */
 typedef void ( *LedGpioWriteFn )( void *ctx, uint32_t pin, int level );
 
+#define LED_GPIO_ACTIVE_LOW    0U
+#define LED_GPIO_ACTIVE_HIGH   1U
+
+#define LED_GPIO_LINE(write_fn, context, pin_id, active) \
+    { ( write_fn ), ( context ), ( pin_id ), ( uint8_t ) ( ( active ) ? 1U : 0U ) }
+
+#define LED_GPIO_CONFIG(name_str, write_fn, context, pin_id, active) \
+    { ( name_str ), LED_GPIO_LINE( ( write_fn ), ( context ), ( pin_id ), ( active ) ) }
+
 /*
- * GPIO-backed LED object.
+ * GPIO line descriptor.
  *
  * Fields:
- *   base         Base LED object. Must be the first member.
  *   write        Board-specific GPIO write callback.
  *   ctx          Board-specific GPIO context passed to write.
  *   pin          Pin identifier passed to write.
@@ -31,30 +39,46 @@ typedef void ( *LedGpioWriteFn )( void *ctx, uint32_t pin, int level );
  */
 typedef struct
 {
-    LedBase base;
     LedGpioWriteFn write;
     void *ctx;
     uint32_t pin;
     uint8_t active_level;
+} LedGpioLine;
+
+/*
+ * GPIO LED configuration.
+ *
+ * Fields:
+ *   name Debug name. May be 0.
+ *   line GPIO line descriptor used by this LED.
+ */
+typedef struct
+{
+    const char *name;
+    LedGpioLine line;
+} LedGpioConfig;
+
+/*
+ * GPIO-backed LED object.
+ *
+ * Fields:
+ *   base         Base LED object. Must be the first member.
+ *   line         Copied GPIO line descriptor.
+ */
+typedef struct
+{
+    LedBase base;
+    LedGpioLine line;
 } LedGpio;
 
 /*
  * Initialize a GPIO-backed LED and set it to off.
  *
  * Parameters:
- *   me           GPIO LED object to initialize. Must not be 0.
- *   name         Debug name. May be 0.
- *   write        GPIO write callback. Must not be 0.
- *   ctx          Board-specific GPIO context passed to write.
- *   pin          Pin identifier passed to write.
- *   active_level Output level that turns the LED on: 0 or 1.
+ *   me     GPIO LED object to initialize. Must not be 0.
+ *   config GPIO LED configuration. Must not be 0 and must contain write.
  */
-void led_gpio_init( LedGpio *me,
-                    const char *name,
-                    LedGpioWriteFn write,
-                    void *ctx,
-                    uint32_t pin,
-                    uint8_t active_level );
+void led_gpio_init( LedGpio *me, const LedGpioConfig *config );
 
 /*
  * Return the base LED view of a GPIO LED object.
