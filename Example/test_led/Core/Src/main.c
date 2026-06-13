@@ -21,6 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "board.h"
 
 /* USER CODE END Includes */
 
@@ -569,6 +570,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
+  board_init();
 
   /* USER CODE END 2 */
 //  SchedulerInit();
@@ -580,10 +582,9 @@ int main(void)
   {
     /* USER CODE END WHILE */
     /* USER CODE BEGIN 3 */
-    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
+    led_on(g_board_led);
     HAL_Delay(500);
-    /* USER CODE BEGIN 3 */
-    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
+    led_off(g_board_led);
     HAL_Delay(500);
   }
   /* USER CODE END 3 */

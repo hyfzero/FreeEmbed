@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../LED/include;../Board/include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -463,6 +463,31 @@
                   </Cads>
                 </FileArmAds>
               </FileOption>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>LED Driver</GroupName>
+          <Files>
+            <File>
+              <FileName>led_base.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../LED/src/led_base.c</FilePath>
+            </File>
+            <File>
+              <FileName>led_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../LED/src/led_gpio.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Board</GroupName>
+          <Files>
+            <File>
+              <FileName>board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Board/src/board.c</FilePath>
             </File>
           </Files>
         </Group>
