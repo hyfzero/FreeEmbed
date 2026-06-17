@@ -43,6 +43,10 @@ typedef struct
     uint32_t busy_reads;
     uint32_t transaction_count;
     uint32_t two_segment_transactions;
+    uint32_t legacy_id_probe_count;
+    uint64_t legacy_id_address;
+    uint32_t status_write_count;
+    uint8_t status_write_values[ 8 ];
     uint32_t page_program_count;
     uint32_t erase_count;
     uint8_t opcodes[ 64 ];
@@ -98,6 +102,13 @@ static HwStatus fake_spi_transfer( void *ctx,
     {
         memcpy( segments[ 1 ].rx_data, fake->jedec_id, 3U );
     }
+    else if( opcode == 0x90U )
+    {
+        fake->legacy_id_probe_count++;
+        fake->legacy_id_address =
+            decode_address( &segments[ 0 ].tx_data[ 1 ], 3U );
+        memcpy( segments[ 1 ].rx_data, fake->jedec_id, 2U );
+    }
     else if( opcode == 0x05U )
     {
         if( fake->busy_forever != 0U )
@@ -112,6 +123,16 @@ static HwStatus fake_spi_transfer( void *ctx,
         else
         {
             segments[ 1 ].rx_data[ 0 ] = 0U;
+        }
+    }
+    else if( opcode == 0x01U )
+    {
+        uint32_t index = fake->status_write_count++;
+
+        if( ( index < ARRAY_SIZE( fake->status_write_values ) ) &&
+            ( segments[ 0 ].length >= 2U ) )
+        {
+            fake->status_write_values[ index ] = segments[ 0 ].tx_data[ 1 ];
         }
     }
     else if( opcode == 0x03U )
@@ -252,6 +273,72 @@ static void test_spi_nor_timeout_wraparound( void )
     CHECK( storage_program( &nor.base, 0U, &value, 1U ) ==
            STORAGE_TIMEOUT );
     CHECK( fake_time.now_ms >= 9U );
+}
+
+static void test_spi_nor_sst25vf010a_init_unlock_and_byte_program( void )
+{
+    SpiNor nor;
+    FakeSpi fake_spi;
+    FakeTime fake_time = { 0U };
+    StorageInfo info;
+    uint8_t data[ 3 ] = { 0x12U, 0x34U, 0x56U };
+
+    memset( &fake_spi, 0, sizeof( fake_spi ) );
+    fake_spi.jedec_id[ 0 ] = 0xBFU;
+    fake_spi.jedec_id[ 1 ] = 0x49U;
+    fake_spi.address_bytes = 3U;
+    setup_spi_nor( &nor, &fake_spi, &fake_time );
+
+    CHECK( storage_init( &nor.base ) == STORAGE_OK );
+    CHECK( storage_get_info( &nor.base, &info ) == STORAGE_OK );
+    CHECK( info.capacity_bytes == 128ULL * 1024ULL );
+    CHECK( info.page_size_bytes == 1U );
+    CHECK( info.erase_size_bytes == 4096U );
+    CHECK( fake_spi.legacy_id_probe_count == 1U );
+    CHECK( fake_spi.legacy_id_address == 0U );
+    CHECK( fake_spi.status_write_count == 1U );
+    CHECK( fake_spi.status_write_values[ 0 ] == 0U );
+    CHECK( fake_spi.opcodes[ 1 ] == 0x90U );
+    CHECK( fake_spi.opcodes[ 2 ] == 0x50U );
+    CHECK( fake_spi.opcodes[ 3 ] == 0x01U );
+
+    CHECK( storage_program( &nor.base, 5U, data, sizeof( data ) ) ==
+           STORAGE_OK );
+    CHECK( fake_spi.page_program_count == 3U );
+    CHECK( fake_spi.program_addresses[ 0 ] == 5U );
+    CHECK( fake_spi.program_addresses[ 1 ] == 6U );
+    CHECK( fake_spi.program_addresses[ 2 ] == 7U );
+    CHECK( fake_spi.program_lengths[ 0 ] == 1U );
+    CHECK( fake_spi.program_lengths[ 1 ] == 1U );
+    CHECK( fake_spi.program_lengths[ 2 ] == 1U );
+    CHECK( fake_spi.opcodes[ 5 ] == 0x06U );
+    CHECK( fake_spi.opcodes[ 6 ] == 0x02U );
+    CHECK( fake_spi.opcodes[ 7 ] == 0x05U );
+    CHECK( fake_spi.opcodes[ 8 ] == 0x06U );
+    CHECK( fake_spi.opcodes[ 9 ] == 0x02U );
+    CHECK( fake_spi.opcodes[ 10 ] == 0x05U );
+    CHECK( fake_spi.opcodes[ 11 ] == 0x06U );
+    CHECK( fake_spi.opcodes[ 12 ] == 0x02U );
+    CHECK( fake_spi.opcodes[ 13 ] == 0x05U );
+}
+
+static void test_spi_nor_sst25vf010a_erase_selection( void )
+{
+    SpiNor nor;
+    FakeSpi fake_spi;
+    FakeTime fake_time = { 0U };
+
+    memset( &fake_spi, 0, sizeof( fake_spi ) );
+    fake_spi.jedec_id[ 0 ] = 0xBFU;
+    fake_spi.jedec_id[ 1 ] = 0x49U;
+    fake_spi.address_bytes = 3U;
+    setup_spi_nor( &nor, &fake_spi, &fake_time );
+    CHECK( storage_init( &nor.base ) == STORAGE_OK );
+
+    CHECK( storage_erase( &nor.base, 0U, 32U * 1024U ) == STORAGE_OK );
+    CHECK( fake_spi.erase_count == 1U );
+    CHECK( fake_spi.erase_opcodes[ 0 ] == 0x52U );
+    CHECK( storage_erase( &nor.base, 1U, 4096U ) == STORAGE_UNALIGNED );
 }
 
 typedef struct
@@ -439,6 +526,8 @@ int main( void )
     test_spi_nor_init_and_read_transaction();
     test_spi_nor_page_split_and_erase_selection();
     test_spi_nor_timeout_wraparound();
+    test_spi_nor_sst25vf010a_init_unlock_and_byte_program();
+    test_spi_nor_sst25vf010a_erase_selection();
     test_eeprom_block_address_and_repeated_start();
     test_eeprom_page_split_and_ack_polling();
     test_common_validation();

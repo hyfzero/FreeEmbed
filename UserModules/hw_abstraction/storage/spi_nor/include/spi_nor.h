@@ -21,6 +21,22 @@ typedef struct
     uint8_t opcode;
 } SpiNorEraseType;
 
+typedef struct
+{
+    uint8_t opcode;
+    uint8_t address_bytes;
+    uint32_t address;
+    uint8_t length;
+} SpiNorIdProbe;
+
+typedef struct
+{
+    uint8_t write_enable_opcode;
+    uint8_t write_opcode;
+    uint8_t value;
+    uint32_t timeout_ms;
+} SpiNorStatusInit;
+
 /*
  * JEDEC-ID-selected command and geometry profile.
  * erase_types may be in any order; the driver chooses the largest valid type.
@@ -41,6 +57,8 @@ typedef struct
     uint8_t enter_4byte_opcode;
     SpiNorEraseType erase_types[ SPI_NOR_MAX_ERASE_TYPES ];
     size_t erase_type_count;
+    SpiNorIdProbe id_probe;
+    SpiNorStatusInit status_init;
 } SpiNorProfile;
 
 typedef struct

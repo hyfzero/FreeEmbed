@@ -4,8 +4,10 @@
 
 #include "container_of.h"
 
-#define SPI_NOR_JEDEC_ID_OPCODE    0x9FU
-#define SPI_NOR_POLL_DELAY_MS      1U
+#define SPI_NOR_JEDEC_ID_OPCODE        0x9FU
+#define SPI_NOR_LEGACY_READ_ID_OPCODE  0x90U
+#define SPI_NOR_POLL_DELAY_MS          1U
+#define SPI_NOR_ID_MAX_BYTES           3U
 
 #define SPI_NOR_ERASE_4K \
     { 4UL * 1024UL, 400U, 0x20U }
@@ -13,6 +15,11 @@
     { 32UL * 1024UL, 1600U, 0x52U }
 #define SPI_NOR_ERASE_64K \
     { 64UL * 1024UL, 2000U, 0xD8U }
+
+#define SPI_NOR_JEDEC_ID_PROBE \
+    { SPI_NOR_JEDEC_ID_OPCODE, 0U, 0U, 3U }
+#define SPI_NOR_NO_STATUS_INIT \
+    { 0U, 0U, 0U, 0U }
 
 #define W25Q_PROFILE(model_name, capacity_code, capacity, address_count, enter_opcode) \
     { \
@@ -29,7 +36,29 @@
         0x01U, \
         ( enter_opcode ), \
         { SPI_NOR_ERASE_4K, SPI_NOR_ERASE_32K, SPI_NOR_ERASE_64K }, \
-        3U \
+        3U, \
+        SPI_NOR_JEDEC_ID_PROBE, \
+        SPI_NOR_NO_STATUS_INIT \
+    }
+
+#define SST25VF010A_PROFILE \
+    { \
+        "SST25VF010A", \
+        { 0xBFU, 0x49U, 0x00U }, \
+        128ULL * 1024ULL, \
+        1U, \
+        20U, \
+        3U, \
+        0x03U, \
+        0x02U, \
+        0x06U, \
+        0x05U, \
+        0x01U, \
+        0U, \
+        { SPI_NOR_ERASE_4K, SPI_NOR_ERASE_32K }, \
+        2U, \
+        { SPI_NOR_LEGACY_READ_ID_OPCODE, 3U, 0U, 2U }, \
+        { 0x50U, 0x01U, 0x00U, 20U } \
     }
 
 static const SpiNorProfile default_profiles[] =
@@ -39,7 +68,8 @@ static const SpiNorProfile default_profiles[] =
     W25Q_PROFILE( "W25Q64", 0x17U, 8ULL * 1024ULL * 1024ULL, 3U, 0U ),
     W25Q_PROFILE( "W25Q128", 0x18U, 16ULL * 1024ULL * 1024ULL, 3U, 0U ),
     W25Q_PROFILE( "W25Q256", 0x19U, 32ULL * 1024ULL * 1024ULL, 4U, 0xB7U ),
-    W25Q_PROFILE( "W25Q512", 0x20U, 64ULL * 1024ULL * 1024ULL, 4U, 0xB7U )
+    W25Q_PROFILE( "W25Q512", 0x20U, 64ULL * 1024ULL * 1024ULL, 4U, 0xB7U ),
+    SST25VF010A_PROFILE
 };
 
 static StorageStatus nor_init( Storage *storage );
@@ -74,6 +104,65 @@ static void encode_address( uint8_t *output,
         uint8_t shift = ( uint8_t ) ( ( address_bytes - index - 1U ) * 8U );
         output[ index ] = ( uint8_t ) ( address >> shift );
     }
+}
+
+static SpiNorIdProbe profile_id_probe( const SpiNorProfile *profile )
+{
+    SpiNorIdProbe probe = profile->id_probe;
+
+    if( probe.length == 0U )
+    {
+        probe.opcode = SPI_NOR_JEDEC_ID_OPCODE;
+        probe.address_bytes = 0U;
+        probe.address = 0U;
+        probe.length = SPI_NOR_ID_MAX_BYTES;
+    }
+
+    return probe;
+}
+
+static int id_probe_is_valid( const SpiNorIdProbe *probe )
+{
+    return ( probe != 0 ) &&
+           ( probe->opcode != 0U ) &&
+           ( probe->address_bytes <= 4U ) &&
+           ( probe->length > 0U ) &&
+           ( probe->length <= SPI_NOR_ID_MAX_BYTES );
+}
+
+static int id_probes_equal( const SpiNorIdProbe *left,
+                            const SpiNorIdProbe *right )
+{
+    return ( left->opcode == right->opcode ) &&
+           ( left->address_bytes == right->address_bytes ) &&
+           ( left->address == right->address ) &&
+           ( left->length == right->length );
+}
+
+static StorageStatus read_id( SpiNor *nor,
+                              const SpiNorIdProbe *probe,
+                              uint8_t id[ SPI_NOR_ID_MAX_BYTES ] )
+{
+    uint8_t command[ 5 ];
+    SpiSegment segments[ 2 ];
+
+    memset( id, 0, SPI_NOR_ID_MAX_BYTES );
+    command[ 0 ] = probe->opcode;
+    encode_address( &command[ 1 ], probe->address, probe->address_bytes );
+
+    segments[ 0 ].tx_data = command;
+    segments[ 0 ].rx_data = 0;
+    segments[ 0 ].length = ( size_t ) probe->address_bytes + 1U;
+    segments[ 0 ].fill_byte = 0xFFU;
+    segments[ 1 ].tx_data = 0;
+    segments[ 1 ].rx_data = id;
+    segments[ 1 ].length = probe->length;
+    segments[ 1 ].fill_byte = 0xFFU;
+
+    return spi_transfer( &nor->config.device,
+                         segments,
+                         2U,
+                         nor->config.transfer_timeout_ms );
 }
 
 static StorageStatus send_command( SpiNor *nor, uint8_t opcode )
@@ -143,12 +232,59 @@ static StorageStatus wait_ready( SpiNor *nor, uint32_t timeout_ms )
     }
 }
 
-static const SpiNorProfile *find_profile( const SpiNor *nor,
-                                         const uint8_t jedec_id[ 3 ] )
+static StorageStatus write_status_init( SpiNor *nor )
+{
+    uint8_t command[ 2 ];
+    SpiSegment segment;
+    StorageStatus status;
+
+    if( nor->profile->status_init.write_opcode == 0U )
+    {
+        return STORAGE_OK;
+    }
+
+    if( nor->profile->status_init.write_enable_opcode != 0U )
+    {
+        status = send_command( nor,
+                               nor->profile->status_init.write_enable_opcode );
+        if( status != STORAGE_OK )
+        {
+            return status;
+        }
+    }
+
+    command[ 0 ] = nor->profile->status_init.write_opcode;
+    command[ 1 ] = nor->profile->status_init.value;
+    segment.tx_data = command;
+    segment.rx_data = 0;
+    segment.length = sizeof( command );
+    segment.fill_byte = 0xFFU;
+
+    status = spi_transfer( &nor->config.device,
+                           &segment,
+                           1U,
+                           nor->config.transfer_timeout_ms );
+    if( status != STORAGE_OK )
+    {
+        return status;
+    }
+
+    return ( nor->profile->status_init.timeout_ms != 0U ) ?
+           wait_ready( nor, nor->profile->status_init.timeout_ms ) :
+           STORAGE_OK;
+}
+
+static StorageStatus find_profile( SpiNor *nor,
+                                   const SpiNorProfile **matched_profile )
 {
     size_t index;
     const SpiNorProfile *profiles = nor->config.profiles;
     size_t profile_count = nor->config.profile_count;
+    SpiNorIdProbe cached_probe;
+    uint8_t cached_id[ SPI_NOR_ID_MAX_BYTES ];
+    uint8_t has_cached_probe = 0U;
+
+    *matched_profile = 0;
 
     if( profiles == 0 )
     {
@@ -157,13 +293,37 @@ static const SpiNorProfile *find_profile( const SpiNor *nor,
 
     for( index = 0U; index < profile_count; index++ )
     {
-        if( memcmp( profiles[ index ].jedec_id, jedec_id, 3U ) == 0 )
+        SpiNorIdProbe probe = profile_id_probe( &profiles[ index ] );
+        StorageStatus status;
+
+        if( !id_probe_is_valid( &probe ) )
         {
-            return &profiles[ index ];
+            return STORAGE_BAD_CONFIG;
+        }
+
+        if( ( has_cached_probe == 0U ) ||
+            !id_probes_equal( &probe, &cached_probe ) )
+        {
+            status = read_id( nor, &probe, cached_id );
+            if( status != STORAGE_OK )
+            {
+                return status;
+            }
+
+            cached_probe = probe;
+            has_cached_probe = 1U;
+        }
+
+        if( memcmp( profiles[ index ].jedec_id,
+                    cached_id,
+                    probe.length ) == 0 )
+        {
+            *matched_profile = &profiles[ index ];
+            return STORAGE_OK;
         }
     }
 
-    return 0;
+    return STORAGE_NOT_FOUND;
 }
 
 static int profile_is_valid( const SpiNorProfile *profile )
@@ -171,6 +331,7 @@ static int profile_is_valid( const SpiNorProfile *profile )
     size_t index;
     uint32_t minimum_erase_size;
     uint64_t addressable_capacity;
+    SpiNorIdProbe probe;
 
     if( ( profile == 0 ) ||
         ( profile->capacity_bytes == 0U ) ||
@@ -214,6 +375,26 @@ static int profile_is_valid( const SpiNorProfile *profile )
         }
     }
 
+    probe = profile_id_probe( profile );
+    if( !id_probe_is_valid( &probe ) )
+    {
+        return 0;
+    }
+
+    if( ( profile->status_init.write_opcode == 0U ) &&
+        ( ( profile->status_init.write_enable_opcode != 0U ) ||
+          ( profile->status_init.value != 0U ) ||
+          ( profile->status_init.timeout_ms != 0U ) ) )
+    {
+        return 0;
+    }
+
+    if( ( profile->status_init.write_opcode != 0U ) &&
+        ( profile->status_init.timeout_ms == 0U ) )
+    {
+        return 0;
+    }
+
     if( ( profile->capacity_bytes % minimum_erase_size ) != 0U )
     {
         return 0;
@@ -234,35 +415,14 @@ static int profile_is_valid( const SpiNorProfile *profile )
 static StorageStatus nor_init( Storage *storage )
 {
     SpiNor *nor = container_of( storage, SpiNor, base );
-    uint8_t opcode = SPI_NOR_JEDEC_ID_OPCODE;
-    uint8_t jedec_id[ 3 ] = { 0U, 0U, 0U };
-    SpiSegment segments[ 2 ];
     StorageStatus status;
     uint32_t minimum_erase_size;
     size_t index;
 
-    segments[ 0 ].tx_data = &opcode;
-    segments[ 0 ].rx_data = 0;
-    segments[ 0 ].length = 1U;
-    segments[ 0 ].fill_byte = 0xFFU;
-    segments[ 1 ].tx_data = 0;
-    segments[ 1 ].rx_data = jedec_id;
-    segments[ 1 ].length = sizeof( jedec_id );
-    segments[ 1 ].fill_byte = 0xFFU;
-
-    status = spi_transfer( &nor->config.device,
-                           segments,
-                           2U,
-                           nor->config.transfer_timeout_ms );
+    status = find_profile( nor, &nor->profile );
     if( status != STORAGE_OK )
     {
         return status;
-    }
-
-    nor->profile = find_profile( nor, jedec_id );
-    if( nor->profile == 0 )
-    {
-        return STORAGE_NOT_FOUND;
     }
 
     if( !profile_is_valid( nor->profile ) )
@@ -279,6 +439,13 @@ static StorageStatus nor_init( Storage *storage )
             nor->profile = 0;
             return status;
         }
+    }
+
+    status = write_status_init( nor );
+    if( status != STORAGE_OK )
+    {
+        nor->profile = 0;
+        return status;
     }
 
     minimum_erase_size = nor->profile->erase_types[ 0 ].size_bytes;
