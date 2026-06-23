@@ -1,0 +1,59 @@
+
+# IAR Settings 
+# ref https://www.iar.com/knowledge/support/technical-notes/ide/which-files-should-be-version-controlled/
+
+#EWARM
+*.dep
+
+# IAR Settings  
+**/settings/*.crun  
+**/settings/*.dbgdt  
+**/settings/*.cspy  
+**/settings/*.cspy.*  
+**/settings/*.xcl  
+**/settings/*.dni  
+**/settings/*.wsdt  
+**/settings/*.wspos
+
+#Libraries
+*.html
+*.htm
+*.map
+*.out
+*.o
+*.zip
+
+#project
+*.log
+*.tmp
+*.bak
+.vscode/
+
+#IAR Debug Exe
+**/Exe/*.sim
+**/Exe/*.srec
+**/Exe/*.s19
+**/Exe/*.S19
+**/Exe/*.bin
+
+#IAR Debug Obj
+**/Obj/*.pbd
+**/Obj/*.pbd.*
+**/Obj/*.pbi
+**/Obj/*.pbi.*
+
+#keil MDK
+*.d
+*.crf
+*.lnp
+*.lst
+*.ini
+*.iex
+*.sct
+*.scvd
+*.uvgui
+*.uvguix.*
+.mxproject
+**/Objects/*.axf
+**/Objects/*.hex
+**/Objects/*.srec

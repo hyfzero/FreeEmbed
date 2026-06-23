@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<userOverrides>
+  <override>
+    <path>C:\Users\lemon\Desktop\write\EZpro100_7212&#x6D4B;&#x8BD5;&#x7248;_p\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>C:\Users\lemon\Desktop\write\EZpro100_7212&#x6D4B;&#x8BD5;&#x7248;_p\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>C:\Users\lemon\Desktop\write\EZpro100_7212&#x6D4B;&#x8BD5;&#x7248;_p\Project\EZPro100_v20\src\MC32P7022.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>C:\Users\lemon\Desktop\write\EZpro100_7212&#x6D4B;&#x8BD5;&#x7248;_p\Project\EZPro100_v20\src\MC32P7212.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>C:\Users\lemon\Desktop\write\EZpro100_7212&#x6D4B;&#x8BD5;&#x7248;_p\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>C:\Users\lemon\Desktop\write\EZpro100_7212&#x6D4B;&#x8BD5;&#x7248;_p\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>C:\Users\lemon\Desktop\write\EZpro100_mc32p7212&#x6D4B;&#x8BD5;&#x7248;_p\Project\EZPro100_v20\src\MC32P7212.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>C:\Users\lemon\Desktop\write\EZpro100_mc32p7212&#x6D4B;&#x8BD5;&#x7248;_p\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014102302\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014102302\Project\EZPro100_v20\src\spi.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 20141024\Project\EZPro100_v20\src\ADC.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 20141024\Project\EZPro100_v20\src\IRC.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 20141024\Project\EZPro100_v20\src\global.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 20141024\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 20141024\Project\EZPro100_v20\src\spi.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 20141024\Project\EZPro100_v20\src\usb_prop.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 20141024\Project\EZPro100_v20\src\wx_i2c.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 20141027\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014102802\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014102803\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 20141028\Project\EZPro100_v20\src\global.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 20141028\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 20141028\Project\EZPro100_v20\src\spi.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014103001\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014103003\Project\EZPro100_v20\src\global.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014103003\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014103003\Project\EZPro100_v20\src\spi.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014103101\Project\EZPro100_v20\inc\global.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014103101\Project\EZPro100_v20\src\IRC.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014103101\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014103101\Project\EZPro100_v20\src\global.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014103101\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014103101\Project\EZPro100_v20\src\spi.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014111002\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014111002\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014111003\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014111004\Project\EZPro100_v20\inc\global.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014111004\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014111004\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\9033\EZpro100 - 2014111004\Project\EZPro100_v20\src\spi.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 20141111\Project\EZPro100_v20\inc\global.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 20141111\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 20141111\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 20141111\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 20141111\Project\EZPro100_v20\src\spi.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 20141112\Project\EZPro100_v20\inc\global.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 20141112\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 20141112\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 20141112\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 20141112\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 20141112\Project\EZPro100_v20\src\spi.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 2014111302\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 2014111302\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 2014111302\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 2014111303\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 2014111303\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 2014111303\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 2014111303\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\EZpro100 - 2014111303\Project\EZPro100_v20\src\spi.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141114_8132 - &#x526F;&#x672C;\Project\EZPro100_v20\src\MC32P8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141114_8132\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141114_8132\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141114_8132\Project\EZPro100_v20\src\MC32P8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141114_8132\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141114_8132\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141116_8132\Project\EZPro100_v20\inc\global.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141116_8132\Project\EZPro100_v20\src\Config.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141116_8132\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141116_8132\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141116_8132\Project\EZPro100_v20\src\MC32P8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141116_8132\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141116_8132\Project\EZPro100_v20\src\global.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141116_8132\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141116_8132\Project\EZPro100_v20\src\spi.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141117_8132\Project\EZPro100_v20\inc\global.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141117_8132\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141117_8132\Project\EZPro100_v20\src\MC32P8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141117_8132\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141117_8132\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014111802_8132\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014111802_8132\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014111802_8132\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141118_8132\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141118_8132\Project\EZPro100_v20\src\MC32P8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141118_8132\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141118_8132\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141119_8132\Project\EZPro100_v20\inc\erorrNum.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141119_8132\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141119_8132\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141119_8132\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112002_8132\Project\EZPro100_v20\inc\erorrNum.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112002_8132\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112002_8132\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112002_8132\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112003_8132\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141120_8132\Project\EZPro100_v20\inc\erorrNum.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141120_8132\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141120_8132\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20141120_8132\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112101_8132\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112102_8132\Project\EZPro100_v20\inc\erorrNum.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112102_8132\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112102_8132\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112401_32E22\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112401_32E22\Project\EZPro100_v20\src\MC32E22.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112401_32E22\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112401_32E22\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112401_32E22\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112501\Project\EZPro100_v20\inc\global.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112501\Project\EZPro100_v20\src\MC32E22.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112501\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112501\Project\EZPro100_v20\src\global.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112501\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112601\Project\EZPro100_v20\src\MC32E22.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112601\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112601\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112602\Project\EZPro100_v20\src\MC32E22.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112602\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112602\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112603\Project\EZPro100_v20\src\MC32E22.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112603\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112603\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112603\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112801\Project\EZPro100_v20\inc\erorrNum.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112801\Project\EZPro100_v20\inc\global.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112801\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112801\Project\EZPro100_v20\src\global.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112801\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120101-write\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120101-write\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120102\Project\EZPro100_v20\inc\erorrNum.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120102\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120102\Project\EZPro100_v20\src\global.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120102\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120402\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120402\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120801\Project\EZPro100_v20\inc\erorrNum.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120801\Project\EZPro100_v20\inc\global.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120801\Project\EZPro100_v20\src\Config.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120801\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120801\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120801\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120801\Project\EZPro100_v20\src\global.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120801\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120801\Project\EZPro100_v20\src\spi.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121201\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121201\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121501 - test\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121501 - test\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121501\Project\EZPro100_v20\inc\global.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121501\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121501\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121501\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121601 - write\Project\EZPro100_v20\src\global.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121601 - write\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121601\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121601\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121601\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121702\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121702\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121901\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014121901\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122201\Project\EZPro100_v20\inc\erorrNum.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122201\Project\EZPro100_v20\src\Config.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122201\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122201\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122201\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122201\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122201\Project\EZPro100_v20\src\global.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122201\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122401\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122401\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122401\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122402\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122402\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122403\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122403\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014122403\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150104\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150104\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150104\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2015010502\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2015010502\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2015010502\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150105\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150107\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150112-7022\Project\EZPro100_v20\src\IRC.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150112-7022\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150112-7022\Project\EZPro100_v20\src\MC32P7022.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150112-7022\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150112-7022\Project\EZPro100_v20\src\spi.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150112\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150113 - write\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150113 - write\Project\EZPro100_v20\src\MC32P7022.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150113 - write\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2015011402\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2015011402\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150114\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150114\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150114\Project\EZPro100_v20\src\MC32P7022.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150114\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2015011502\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2015011502\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2015011502\Project\EZPro100_v20\src\MC32P7022.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2015011502\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2015011601\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2015011601\Project\EZPro100_v20\src\MC32P7022.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2015011601\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.85_20150120 - 02\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.85_20150120 - 02\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.85_20150120 - 02\Project\EZPro100_v20\src\global.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.85_20150120 - 02\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.85_20150120\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.85_20150120\Project\EZPro100_v20\src\MC32T8132.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.85_20150120\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.85_20150121_02\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.85_20150121_02\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.85_20150121_02\Project\EZPro100_v20\src\MC32P7022.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.85_20150121_02\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150122_01 - test6060WriteErrorNum\Project\EZPro100_v20\inc\erorrNum.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150122_01 - test6060WriteErrorNum\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150122_01 - test6060WriteErrorNum\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150122_01 - test6060WriteErrorNum\Project\EZPro100_v20\src\MC32P7022.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150122_01 - test6060WriteErrorNum\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150122_01 - test6060WriteErrorNum\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150128_01\Project\EZPro100_v20\src\ADC.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150128_01\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150128_01\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150128_01\Project\EZPro100_v20\src\MC32P7022.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150128_01\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150128_01\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150202 - 02\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150202 - 02\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150202 - 02\Project\EZPro100_v20\src\MC32P7022.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150202 - 02\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150202 - 02\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150202\Project\EZPro100_v20\src\MC32P7022.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150203-01\Project\EZPro100_v20\inc\erorrNum.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150203-01\Project\EZPro100_v20\inc\global.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150203-01\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150203-01\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150203-01\Project\EZPro100_v20\src\MC32P7022.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150203-01\Project\EZPro100_v20\src\MC9033.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150203-01\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150205-01\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150205-01\Project\EZPro100_v20\src\MC32P7022.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150205-01\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150206\Project\EZPro100_v20\src\MC30P6060.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150206\Project\EZPro100_v20\src\MC32P21Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\MyWork\writerProgram\testing\EZpro100_v2.86test_20150206\Project\EZPro100_v20\src\main.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\&#x8D44;&#x6599;\EZpro100\Project\EZPro100_v20\src\global.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>D:\RollaWork\&#x8D44;&#x6599;\EZpro100\Project\EZPro100_v20\src\spi.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\SVN\APP\Firmware\&#x70e7;&#x5F55;&#x5De5;&#x5177;&#x7248;&#x672C;&#x5e93;\&#x975e;&#x6B63;&#x5F0F;&#x7248;&#x5De5;&#x5177;\A500\FPGA\EZPro100_A500FPGA_v0.1_20170921_p\Project\EZPro100_v20\inc\Config.h</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\SVN\APP\Firmware\&#x70e7;&#x5F55;&#x5De5;&#x5177;&#x7248;&#x672C;&#x5e93;\&#x975e;&#x6B63;&#x5F0F;&#x7248;&#x5De5;&#x5177;\A500\FPGA\EZPro100_A500FPGA_v0.1_20170921_p\Project\EZPro100_v20\src\MC32P5232Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\SVN\APP\Firmware\&#x70e7;&#x5F55;&#x5De5;&#x5177;&#x7248;&#x672C;&#x5e93;\&#x975e;&#x6B63;&#x5F0F;&#x7248;&#x5De5;&#x5177;\A500\&#x6D4B;&#x8BD5;&#x7248;\v0.2\EZPro100_A500TEST_v0.2_20180102_code\Project\EZPro100_v20\src\MC32P5232Pro.c</path>
+    <encoding>System</encoding>
+  </override>
+  <override>
+    <path>E:\SVN\APP\Firmware\&#x70e7;&#x5F55;&#x5De5;&#x5177;&#x7248;&#x672C;&#x5e93;\&#x975e;&#x6B63;&#x5F0F;&#x7248;&#x5De5;&#x5177;\A500\&#x6D4B;&#x8BD5;&#x7248;\v0.3\EZPro100_A500TEST_v0.3_20180111_code\Project\EZPro100_v20\src\MC32P5232Pro.c</path>
+    <encoding>GB2312</encoding>
+  </override>
+</userOverrides>
+
+

@@ -1,0 +1,20 @@
+MTP
+
+Main block：8K×8
+
+编址：2000H～3FFFH
+
+Information block 32*8
+
+编址：0000H～001FH
+
+烧写时VDD=5V，VPP=9.5V
+
+ID=0201H
+
+烧写时序最后一个周期应在4.5ms以上（具体需调试），倒数第二个周期（原来OTP的PROG时间）不需要长，与普通周期相当即可。
+
+烧写引脚同MC20P01
+
+WFAIL和BUSY从MTP 的IP引出做调试用。
+
